@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+header .mobile-menu a:visited {
+	@apply text-gray-500;
+}
+
+header .navigation-main a:visited {
+	@apply text-gray-500;
+}
+
+.menu {
+	@apply lg:flex lg:gap-4 lg:text-xs lg:font-bold lg:uppercase lg:tracking-wide text-gray-500;
+}
+
+.navigation-main a {
+	@apply block h-16 border-b-4 border-transparent leading-[4rem] hover:border-current hover:text-red-700;
+}
+
+.mobile-menu .menu a {
+@apply flex h-16 border-b-4 border-transparent leading-[4rem] hover:border-current hover:text-red-700;
+}
