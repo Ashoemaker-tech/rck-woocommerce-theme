@@ -1,12 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+/*** Header & primary nav ***/
 header .mobile-menu a:visited {
 	@apply text-gray-500;
 }
 
-header .navigation-main a:visited {
+header a:visited {
 	@apply text-gray-500;
 }
 
@@ -20,4 +20,30 @@ header .navigation-main a:visited {
 
 .mobile-menu .menu a {
 @apply flex h-16 border-b-4 border-transparent leading-[4rem] hover:border-current hover:text-red-700;
+}
+
+/*** Home Page ***/
+.shop-btn:visited {
+	@apply text-white;
+}
+
+/*** Footer ***/
+footer ul a:visited {
+	@apply text-gray-500;
+}
+
+footer ul li a {
+	@apply mx-2
+}
+
+footer .menu {
+	@apply flex justify-center items-center lg:justify-end
+}
+
+.back-to-top:visited {
+	@apply text-white hover:text-gray-800;
+}
+
+footer ul a:hover {
+	@apply text-red-500;
 }
