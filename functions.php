@@ -217,3 +217,14 @@ function woocommerce_header_add_to_cart_fragment( $fragments ) {
 	$fragments['a.cart-customlocation'] = ob_get_clean();
 	return $fragments;
 }
+
+/**
+ * Woocommerce.
+ */
+add_theme_support('woocommerce');
+
+function remove_woocommerce_styles($enqueue_styles) {
+	unset($enqueue_styles['woocommerce-general']);
+	return $enqueue_styles;
+}
+add_filter('woocommerce_enqueue_styles', 'remove_woocommerce_styles');

@@ -16,8 +16,8 @@
 get_header();
 ?>
 
-<main id="primary" class="site-main">
-  <section class="relative  bg-cover bg-center bg-no-repeat" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/hero-bg.webp');">
+<main id="primary">
+  <section class="relative bg-cover bg-center bg-no-repeat" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/hero-bg.webp'); width:100%;">
     <div class="absolute inset-0 bg-white/75 sm:bg-transparent sm:bg-gradient-to-r sm:from-white/95 sm:to-white/25"></div>
 
     <div class="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8">
@@ -45,9 +45,9 @@ get_header();
     </div>
   </section>
 
-  <section class="container mx-auto mt-24">
+  <section class="max-w-7xl mx-auto mt-24">
     <header class="text-center">
-      <h2 class="text-xl font-bold text-gray-900 sm:text-3xl">Popular Products</h2>
+      <h1 class=" font-bold text-gray-900">Popular Products</h1>
       <p class="max-w-md mx-auto mt-4 text-gray-500">People can't get enough of these items.</p>
     </header>
     <div class="my-8">
@@ -55,10 +55,10 @@ get_header();
     </div>
   </section>
 
-  <section class="container mx-auto mt-24">
-    <div class="max-w-screen-xl px-4 py-8 mx-auto sm:px-6 sm:py-12 lg:px-8">
+  <section class="max-w-7xl mx-auto mt-24">
+    <div class="max-w-screen-2xl px-4 py-8 mx-auto sm:px-6 sm:py-12 lg:px-8">
       <header class="text-center">
-        <h2 class="text-xl font-bold text-gray-900 sm:text-3xl">Categories</h2>
+        <h1 class="font-bold text-gray-900">Categories</h1>
         <p class="max-w-md mx-auto mt-4 text-gray-500">Our most popular categories.</p>
       </header>
       <ul class="grid grid-cols-1 gap-4 mt-8 lg:grid-cols-3">

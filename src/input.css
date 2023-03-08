@@ -1,6 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Global */
+h1 {
+    @apply text-3xl lg:text-4xl font-bold;
+}
+
+.site-main {
+    @apply py-4 max-w-7xl mx-auto;
+}
+
+.orderby {
+    @apply my-4 p-1 bg-white border-gray-300 rounded shadow;
+}
+
+.woocommerce-breadcrumb a:visited {
+    @apply text-gray-800;
+}
 /*** Header & primary nav ***/
 header .mobile-menu a:visited {
 	@apply text-gray-500;
@@ -21,12 +38,97 @@ header a:visited {
 .mobile-menu .menu a {
 @apply flex h-16 border-b-4 border-transparent leading-[4rem] hover:border-current hover:text-red-700;
 }
+/* Page titles */
+.page-title {
+    @apply py-8;
+}
 
 /*** Home Page ***/
 .shop-btn:visited {
 	@apply text-white;
 }
 
+/* Product cards */
+.amount {
+    @apply text-gray-800;
+}
+
+.price ins{
+    @apply text-gray-500 hover:text-rose-600 bg-white;
+}
+
+.price del {
+    @apply text-gray-500/50
+}
+
+li.product .button {
+    @apply block bg-rose-600 text-white text-center py-1 px-2 rounded lg:inline-block lg:float-right;
+}
+
+.woocommerce-loop-product__title {
+    @apply text-gray-500 hover:text-rose-600;
+}
+
+.product a img {
+    @apply relative shadow;
+}
+
+span.onsale {
+    min-height: 3.236em;
+    min-width: 3.236em;
+    font-size: 1em;
+    font-weight: 700;
+    position: absolute;
+    text-align: center;
+    line-height: 3.236;
+    top: -0.5em;
+    left: -0.5em;
+    margin: 0;
+    border-radius: 100%;
+    background-color: #DC2626;
+    color: #fff;
+    font-size: 0.857em;
+    z-index: 9;
+}
+
+div.product {
+    margin-bottom: 0;
+    position: relative;
+}
+
+ul.products li.product .onsale {
+    top: 0;
+    right: 0;
+    left: auto;
+    margin: -0.5em -0.5em 0 0;
+}
+
+/* Single product page */
+.product {
+    @apply container mx-auto my-12;
+}
+
+.wp-post-image {
+    @apply h-72 w-full relative rounded-xl object-cover lg:h-[540px];
+}
+
+.summary {
+    @apply space-y-4 lg:pt-8 ;
+}
+
+/* Shop Page */
+.woocommerce-pagination {
+    @apply text-center ;
+}
+
+
+.woocommerce-pagination li span {
+    @apply font-medium inline-flex h-10 w-10 items-center justify-center rounded border border-gray-100;
+}
+
+.woocommerce-pagination li a:visited {
+    @apply text-gray-800;
+}
 /*** Footer ***/
 footer ul a:visited {
 	@apply text-gray-500;

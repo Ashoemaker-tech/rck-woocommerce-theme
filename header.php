@@ -75,11 +75,17 @@
             <div class="flex items-center divide-x divide-gray-100 border-x border-gray-100">
 
               <span>
-                <a href="<?php echo wc_get_cart_url(); ?>" class="flex items-center border-b-4 border-transparent p-4 hover:border-red-700 hover:text-red-700 hover:border-red-600" title="<?php _e('View your shopping cart'); ?>">
-                  <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <a href="<?php echo wc_get_cart_url(); ?>" class="flex relative items-center border-b-4 border-transparent p-4 hover:border-red-700 hover:text-red-700 hover:border-red-600" title="<?php _e('View your shopping cart'); ?>">
+                  <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" xmlns="http://www.w3.org/2000/svg">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
                   </svg>
-                  <?php echo  WC()->cart->get_cart_contents_count(); ?>
+                  <span class="absolute top-1 right-2 text-sm bg-red-600 px-1.5 text-white rounded-full">
+                    <?php
+                     if(WC()->cart->get_cart_contents_count()) {
+                      echo  WC()->cart->get_cart_contents_count(); 
+                     }
+                     ?>
+                  </span>
                 </a>
               </span>
             </div>
