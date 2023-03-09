@@ -50,7 +50,7 @@ get_header();
       <h1 class=" font-bold text-gray-900">Popular Products</h1>
       <p class="max-w-md mx-auto mt-4 text-gray-500">People can't get enough of these items.</p>
     </header>
-    <div class="my-8">
+    <div class="my-8 px-4">
       <?= do_shortcode('[products colums=4 limit=4]'); ?>
     </div>
   </section>
