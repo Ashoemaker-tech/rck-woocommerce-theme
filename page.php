@@ -16,7 +16,7 @@ get_header();
 ?>
 
 <main id="primary" class="site-main">
-	<section class="max-w-7xl mx-auto">
+	<section class="container mx-auto">
 
 
 		<?php

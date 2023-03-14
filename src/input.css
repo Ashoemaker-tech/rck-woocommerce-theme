@@ -4,19 +4,19 @@
 
 /* Global */
 h1 {
-    @apply text-3xl lg:text-4xl font-bold;
+    @apply text-3xl font-bold lg:text-4xl;
 }
 
 h2 {
-    @apply text-2xl lg:text-3xl font-semibold;
+    @apply text-2xl font-semibold lg:text-3xl;
 }
 
 .site-main {
-    @apply py-4 max-w-7xl mx-auto px-4;
+    @apply container px-4 py-4 mx-auto;
 }
 
 .orderby {
-    @apply my-4 p-1 bg-white border-gray-300 rounded shadow;
+    @apply p-1 my-4 bg-white border-gray-300 rounded shadow;
 }
 
 .woocommerce-breadcrumb a:visited {
@@ -36,7 +36,7 @@ li.product a:visited {
 }
 
 .menu {
-	@apply lg:flex lg:gap-4 lg:text-xs lg:font-bold lg:uppercase lg:tracking-wide text-gray-500;
+	@apply text-gray-500 lg:flex lg:gap-4 lg:text-xs lg:font-bold lg:uppercase lg:tracking-wide;
 }
 
 .navigation-main a {
@@ -190,21 +190,10 @@ p.demo_store a {
     color: rgba(0, 0, 0, 0.75);
 }
 .woocommerce a.remove {
-    display: block;
-    font-size: 1.5em;
-    height: 1em;
-    width: 1em;
-    text-align: center;
-    line-height: 1;
-    border-radius: 100%;
-    color: red !important;
-    text-decoration: none;
-    font-weight: 700;
-    border: 0;
+   @apply text-[40px] font-bold text-gray-500 rounded-full px-2 text-center; 
 }
 .woocommerce a.remove:hover {
-    color: #fff !important;
-    background: red;
+    @apply text-red-600;
 }
 .woocommerce small.note {
     display: block;
@@ -990,9 +979,9 @@ p.demo_store a {
     background: rgba(0, 0, 0, 0.025);
 }
 .woocommerce table.shop_table {
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    
     margin: 0 -1px 24px 0;
-    text-align: left;
+    text-align: justify;
     width: 100%;
     border-collapse: separate;
     border-radius: 5px;
@@ -1003,7 +992,7 @@ p.demo_store a {
     line-height: 1.5em;
 }
 .woocommerce table.shop_table td {
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    /* border-top: 1px solid rgba(0, 0, 0, 0.1); */
     padding: 9px 12px;
     vertical-align: middle;
     line-height: 1.5em;
@@ -1022,7 +1011,7 @@ p.demo_store a {
 .woocommerce table.shop_table tfoot td,
 .woocommerce table.shop_table tfoot th {
     font-weight: 700;
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    /* border-top: 1px solid rgba(0, 0, 0, 0.1); */
 }
 .woocommerce table.my_account_orders {
     font-size: 0.85em;
@@ -1951,12 +1940,12 @@ p.demo_store a {
 #add_payment_method table.cart .product-thumbnail,
 .woocommerce-cart table.cart .product-thumbnail,
 .woocommerce-checkout table.cart .product-thumbnail {
-    min-width: 32px;
+    min-width: 50px;
 }
 #add_payment_method table.cart img,
 .woocommerce-cart table.cart img,
 .woocommerce-checkout table.cart img {
-    width: 32px;
+    width: 150px;
     box-shadow: none;
 }
 #add_payment_method table.cart td,
@@ -2508,5 +2497,15 @@ span.amount {
 
 li.product .button {
     @apply bg-rose-600 text-white py-1.5 px-3 rounded;
+}
+form table tbody tr td a {
+    @apply text-gray-800 font-semibold text-[25px] ;
+}
+
+form table tbody tr td a:visited {
+    @apply text-gray-800;
+}
+td.actions {
+        @apply pt-20 lg:pt-40 !important;
 }
 

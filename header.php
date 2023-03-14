@@ -26,7 +26,7 @@
   <?php wp_body_open(); ?>
   <div id="page" class="site">
     <header id="Top" aria-label="Site Header" class="border-b border-gray-100">
-      <div class="mx-auto flex h-20 max-w-screen-2xl items-center justify-between sm:px-6 lg:px-8">
+      <div class="mx-auto flex h-20 items-center justify-between sm:px-6 lg:px-8">
         <div class="flex items-center">
           <!-- mobile dropdown -->
           <div x-data="{ isActive: false }" class="relative">

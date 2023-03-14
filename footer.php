@@ -12,7 +12,7 @@
 ?>
 <footer aria-label="Site Footer">
   <div
-    class="relative mx-auto max-w-screen-xl px-4 py-4 sm:px-6 lg:px-8 lg:pt-24"
+    class="relative mx-auto px-4 py-4 sm:px-6 lg:px-8 lg:pt-24"
   >
     <div class="absolute top-4 right-4 sm:top-6 sm:right-6 lg:top-8 lg:right-8">
       <a

@@ -45,7 +45,7 @@ get_header();
     </div>
   </section>
 
-  <section class="max-w-7xl mx-auto mt-24">
+  <section class="container mx-auto mt-24">
     <header class="text-center">
       <h1 class=" font-bold text-gray-900">Popular Products</h1>
       <p class="max-w-md mx-auto mt-4 text-gray-500">People can't get enough of these items.</p>
@@ -55,7 +55,7 @@ get_header();
     </div>
   </section>
 
-  <section class="max-w-7xl mx-auto mt-24">
+  <section class=" mx-auto mt-24">
     <div class="max-w-screen-2xl px-4 py-8 mx-auto sm:px-6 sm:py-12 lg:px-8">
       <header class="text-center">
         <h1 class="font-bold text-gray-900">Categories</h1>
